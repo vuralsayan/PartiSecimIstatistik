@@ -1,6 +1,6 @@
 ﻿namespace PartiSecimIstatistik
 {
-    partial class Form1
+    partial class FrmOyGiris
     {
         /// <summary>
         /// Required designer variable.
