@@ -169,6 +169,7 @@
             this.BtnCıkısYap.TabIndex = 15;
             this.BtnCıkısYap.Text = "ÇIKIŞ YAP";
             this.BtnCıkısYap.UseVisualStyleBackColor = true;
+            this.BtnCıkısYap.Click += new System.EventHandler(this.BtnCıkısYap_Click);
             // 
             // FrmOyGiris
             // 

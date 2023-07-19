@@ -41,5 +41,10 @@ namespace PartiSecimIstatistik
             FrmGrafikler frm = new FrmGrafikler();
             frm.Show();
         }
+
+        private void BtnCıkısYap_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
