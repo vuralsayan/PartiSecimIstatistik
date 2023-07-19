@@ -44,6 +44,32 @@ namespace PartiSecimIstatistik
                 chart1.Series["Partiler"].Points.AddXY("E PARTİ", dr2[4]);  
             }
             baglanti.Close();
+
+
+        }
+
+        private void CmbIlce_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // İlçe Seçildiğinde O İlçenin Oylarını Grafiklere Çekme
+            baglanti.Open();
+            SqlCommand komut3 = new SqlCommand("SELECT * FROM TBLILCE WHERE ILCEAD=@P1", baglanti);
+            komut3.Parameters.AddWithValue("@P1", CmbIlce.Text);
+            SqlDataReader dr3 = komut3.ExecuteReader();
+            while (dr3.Read())
+            {
+                progressBar1.Value = int.Parse(dr3[2].ToString());  
+                progressBar2.Value = int.Parse(dr3[3].ToString());
+                progressBar3.Value = int.Parse(dr3[4].ToString());
+                progressBar4.Value = int.Parse(dr3[5].ToString());
+                progressBar5.Value = int.Parse(dr3[6].ToString());
+
+                LblA.Text = dr3[2].ToString();  
+                LblB.Text = dr3[3].ToString();
+                LblC.Text = dr3[4].ToString();
+                LblD.Text = dr3[5].ToString();
+                LblE.Text = dr3[6].ToString();
+            }
+            baglanti.Close();
         }
     }
 }
