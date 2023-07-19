@@ -35,7 +35,7 @@
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.CmbIlce = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.progressBar2 = new System.Windows.Forms.ProgressBar();
@@ -100,7 +100,7 @@
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.progressBar1);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.CmbIlce);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Location = new System.Drawing.Point(16, 351);
             this.groupBox2.Name = "groupBox2";
@@ -118,14 +118,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "İlçe Seçin:";
             // 
-            // comboBox1
+            // CmbIlce
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(141, 45);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(188, 32);
-            this.comboBox1.TabIndex = 1;
+            this.CmbIlce.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CmbIlce.FormattingEnabled = true;
+            this.CmbIlce.Location = new System.Drawing.Point(141, 45);
+            this.CmbIlce.Name = "CmbIlce";
+            this.CmbIlce.Size = new System.Drawing.Size(188, 32);
+            this.CmbIlce.TabIndex = 1;
             // 
             // label2
             // 
@@ -270,6 +270,7 @@
             this.Name = "FrmGrafikler";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VTGS";
+            this.Load += new System.EventHandler(this.FrmGrafikler_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.groupBox2.ResumeLayout(false);
@@ -283,7 +284,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox CmbIlce;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label LblE;
         private System.Windows.Forms.Label LblD;

@@ -149,6 +149,7 @@
             this.BtnOyGiris.TabIndex = 12;
             this.BtnOyGiris.Text = "OY GİRİŞİ YAP";
             this.BtnOyGiris.UseVisualStyleBackColor = true;
+            this.BtnOyGiris.Click += new System.EventHandler(this.BtnOyGiris_Click);
             // 
             // BtnGrafikler
             // 
@@ -158,6 +159,7 @@
             this.BtnGrafikler.TabIndex = 14;
             this.BtnGrafikler.Text = "GRAFİKLER";
             this.BtnGrafikler.UseVisualStyleBackColor = true;
+            this.BtnGrafikler.Click += new System.EventHandler(this.BtnGrafikler_Click);
             // 
             // BtnCıkısYap
             // 
@@ -168,7 +170,7 @@
             this.BtnCıkısYap.Text = "ÇIKIŞ YAP";
             this.BtnCıkısYap.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // FrmOyGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -193,7 +195,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form1";
+            this.Name = "FrmOyGiris";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VTGS";
             this.ResumeLayout(false);
