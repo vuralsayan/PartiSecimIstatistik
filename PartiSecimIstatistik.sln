@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33801.468
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartiSecimIstatistik", "PartiSecimIstatistik\PartiSecimIstatistik.csproj", "{4711CD7B-5016-4234-93EE-DABE993B117D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4711CD7B-5016-4234-93EE-DABE993B117D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4711CD7B-5016-4234-93EE-DABE993B117D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4711CD7B-5016-4234-93EE-DABE993B117D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4711CD7B-5016-4234-93EE-DABE993B117D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46E3B1D9-002B-451F-9D80-C110A030FD0F}
+	EndGlobalSection
+EndGlobal
